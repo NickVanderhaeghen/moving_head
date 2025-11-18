@@ -1,0 +1,175 @@
+menu "dip_config"
+    config GPIO_DIP_0
+        int "GPIO_DIP_0"
+        default 11
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 0
+
+    config GPIO_DIP_1
+        int "GPIO_DIP_1"
+        default 13
+        help 
+            WHICH GPIO PIN IS USED TO READ DIP 1
+
+    config GPIO_DIP_2
+        int "GPIO_DIP_2"
+        default 12
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 2
+
+    config GPIO_DIP_3
+        int "GPIO_DIP_3"
+        default 14
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 3
+
+    config GPIO_DIP_4
+        int "GPIO_DIP_4"
+        default 7
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 4
+
+    config GPIO_DIP_5
+        int "GPIO_DIP_5"
+        default 6
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 5
+
+    config GPIO_DIP_6
+        int "GPIO_DIP_6"
+        default 4
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 6
+
+    config GPIO_DIP_7
+        int "GPIO_DIP_7"
+        default 5
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 7
+
+    config GPIO_DIP_8
+        int "GPIO_DIP_8"
+        default 44
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 8
+
+endmenu
+
+
+
+
+menu "x_motor_config"
+    config GPIO_COIL_1_X
+        int "GPIO_COIL_1"
+        default 38
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 1
+
+    config GPIO_COIL_2_X
+        int "GPIO_COIL_2"
+        default 39
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 2
+
+    config GPIO_COIL_3_X
+        int "GPIO_COIL_3"
+        default 40
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 3
+
+    config GPIO_COIL_4_X
+        int "GPIO_COIL_4"
+        default 41
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 4 
+
+    config GPIO_HOME_X
+        int "GPIO_HOME_X"
+        default 15
+        help
+            WHICH GPIO PIN IS USED TO READ THE HOME POSITION FOR X  
+endmenu
+menu "y_motor_config"    
+    config GPIO_COIL_1_Y
+        int "GPIO_COIL_1"
+        default 20
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 1
+
+    config GPIO_COIL_2_Y
+        int "GPIO_COIL_2"
+        default 21
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 2
+
+    config GPIO_COIL_3_Y
+        int "GPIO_COIL_3"
+        default 47
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 3
+
+    config GPIO_COIL_4_Y
+        int "GPIO_COIL_4"
+        default 48
+        help
+            WHICH GPIO PIN IS USED TO STEER COIL 4  
+    config GPIO_HOME_Y
+        int "GPIO_HOME_Y"
+        default 16
+        help
+            WHICH GPIO PIN IS USED TO READ THE HOME POSITION FOR Y  
+
+
+endmenu
+
+
+
+
+
+menu "ws2812b_config"
+    config WS2812B_GPIO
+        int "WS2812B_GPIO"
+        default 48
+        help
+            WHICH GPIO PIN IS USED TO CONTROL THE WS2812B LEDS
+
+    config WS2812B_LED_COUNT
+        int "WS2812B_LED_COUNT"
+        default 16
+        help
+            HOW MANY WS2812B LEDS ARE CONNECTED
+endmenu
+
+menu "uart_config"
+    config UART_PORT
+        int "UART_PORT"
+        default 2
+        help
+            WHICH UART PORT TO USE
+
+    config UART_TX_PIN
+        int "UART_TX_PIN"
+        default 17
+        help
+            WHICH GPIO PIN TO USE FOR UART TX
+
+    config UART_RX_PIN
+        int "UART_RX_PIN"
+        default 16
+        help
+            WHICH GPIO PIN TO USE FOR UART RX
+
+    config UART_BAUD_RATE
+        int "UART_BAUD_RATE"
+        default 250000
+        help
+            WHAT BAUD RATE TO USE FOR UART COMMUNICATION
+endmenu
+
+menu "dmx_config"
+    config DMX_CHANNELS
+        int "DMX_CHANNELS"
+        default 3
+        help
+            HOW MANY DMX CHANNELS TO USE
+endmenu
