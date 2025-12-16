@@ -12,13 +12,12 @@
 #include "include/readArray.h"
 #include "include/ws2812b.h"
 #include "include/settings.h"
+#include "include/motor.h"
 
 extern gptimer_handle_t gptimerHandle;
 
-void set_hoek_xpos(int hoek);
-void set_hoek_ypos(int hoek);
-void stepping_xpos(void);
-void stepping_ypos(void);
-void back_to_home(void);
-bool alarmGaatAf(gptimer_handle_t gptimerHandle, const gptimer_alarm_event_data_t *edata, void *user_ctx);
+
+
+
+
 void readChannel(void);

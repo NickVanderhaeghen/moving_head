@@ -1,4 +1,5 @@
 #include "include/settings.h"
+#include "include/ws2812b.h"
 
 #define RX_BUF_SIZE     2048
 #define TX_BUF_SIZE     0
@@ -78,7 +79,7 @@ void init(){
     gptimer_config_t gptimer_config = {
         .clk_src = GPTIMER_CLK_SRC_DEFAULT,
         .direction = GPTIMER_COUNT_UP,
-        .resolution_hz = 1000000, // 1 tick = 1 µs
+        .resolution_hz = CONFIG_TIMER_FREQ_HZ, // 1 tick = 1 µs
 
     };
     gptimer_new_timer(&gptimer_config, &gptimerHandle);
@@ -99,5 +100,7 @@ void init(){
 
     gptimer_enable(gptimerHandle);
     gptimer_start(gptimerHandle);
+
+    config_led();
 
 }

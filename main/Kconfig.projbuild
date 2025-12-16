@@ -89,6 +89,7 @@ menu "x_motor_config"
         help
             WHICH GPIO PIN IS USED TO READ THE HOME POSITION FOR X  
 endmenu
+
 menu "y_motor_config"    
     config GPIO_COIL_1_Y
         int "GPIO_COIL_1"
@@ -121,9 +122,6 @@ menu "y_motor_config"
 
 
 endmenu
-
-
-
 
 
 menu "ws2812b_config"
@@ -172,4 +170,12 @@ menu "dmx_config"
         default 3
         help
             HOW MANY DMX CHANNELS TO USE
+endmenu
+
+menu "timer_config"
+    config TIMER_FREQ_HZ
+        int "TIMER_FREQ_HZ"
+        default 1000000
+        help
+            HOW MANY TICKS PER SECOND FOR THE GPTIMER. DEFAULT 1US PER TICK
 endmenu

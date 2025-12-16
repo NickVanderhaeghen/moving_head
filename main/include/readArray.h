@@ -11,6 +11,4 @@
 
 
 
-void readArray(int *channel);
-
-void updateLightAndPosition(int channel);
+void readArray(int *channel, uint8_t *dmx_values);
