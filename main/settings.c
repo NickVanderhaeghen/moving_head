@@ -31,7 +31,7 @@ void init(){
     };
      
     ESP_ERROR_CHECK(uart_param_config(UART_NUM_1, &uart_config));
-    ESP_ERROR_CHECK(uart_set_pin(UART_NUM_1, UART_PIN_NO_CHANGE, CONFIG_UART_TX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+    ESP_ERROR_CHECK(uart_set_pin(UART_NUM_1, UART_PIN_NO_CHANGE, CONFIG_UART_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
 
 
 
@@ -86,7 +86,7 @@ void init(){
 
     gptimer_alarm_config_t alarm_config = {
         .reload_count = 0,
-        .alarm_count = 4000,
+        .alarm_count = 6000,
         .flags.auto_reload_on_alarm = true,
     };
     gptimer_set_alarm_action(gptimerHandle, &alarm_config);

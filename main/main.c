@@ -251,7 +251,6 @@ void app_main(void)
         readArray(&channel);
 
         vTaskDelay(10 / portTICK_PERIOD_MS);
-
     }
     
 

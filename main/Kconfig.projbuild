@@ -49,7 +49,7 @@ menu "dip_config"
 
     config GPIO_DIP_8
         int "GPIO_DIP_8"
-        default 44
+        default 19
         help
             WHICH GPIO PIN IS USED TO READ DIP 8
 
@@ -110,7 +110,7 @@ menu "y_motor_config"
 
     config GPIO_COIL_4_Y
         int "GPIO_COIL_4"
-        default 48
+        default 45
         help
             WHICH GPIO PIN IS USED TO STEER COIL 4  
     config GPIO_HOME_Y
@@ -149,13 +149,13 @@ menu "uart_config"
 
     config UART_TX_PIN
         int "UART_TX_PIN"
-        default 17
+        default 18
         help
             WHICH GPIO PIN TO USE FOR UART TX
 
     config UART_RX_PIN
         int "UART_RX_PIN"
-        default 16
+        default 17
         help
             WHICH GPIO PIN TO USE FOR UART RX
 
